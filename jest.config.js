@@ -6,4 +6,6 @@ module.exports = {
   transform: {
     "^.+\\.ts$": "ts-jest",
   },
+  // Avoid depending on a working system watchman binary; the suite is tiny.
+  watchman: false,
 };
